@@ -8,21 +8,28 @@ import imgSummary from "../../assets/img3.png";
 
 const Home = () => {
   const items = [
-    "Phase 1",
-    "Phase 2",
-    "Phase 3",
-    "Line Parameter 1",
-    "Line Parameter 2",
-    "Line Parameter 3",
+    "Current",
+    "Voltage",
+    "Frequency",
+    "Power Factor",
+    "Active Energy",
+    "Reactive Energy",
+    "Apparent Energy",
+  ];
+  const monitors = [
+    "Phase Loss or Recovery",
+    "Overload or Exceed pre-set Value",
+    "Oil Level or Temperature",
+    "Advance Data Analysis(Optional)",
   ];
   return (
-    <div>
+    <div className="overflow-hidden">
       <Banner></Banner>
       {/* FeatureImage */}
-      <img src={imgBody} alt="body" className="w-100 p-5" />
+      <img data-aos="zoom-in" data-aos-duration="2000" src={imgBody} alt="body" className="w-100 p-5" />
       {/* Measures Items */}
-      <div className="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-evenly bg-primary bg-gradient my-5">
-        <div className="item-list">
+      <div data-aos="fade-up" data-aos-duration="3000" className="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-evenly bg-primary bg-gradient my-5">
+        <div data-aos="fade-left" data-aos-duration="3000" className="item-list">
           <h2 className="text-warning fs-3">
             Measure Items(Phase & Line Parameter)
           </h2>
@@ -34,10 +41,10 @@ const Home = () => {
             ))}
           </ul>
         </div>
-        <div className="item-list">
+        <div data-aos="fade-right" data-aos-duration="3000" className="item-list">
           <h2 className="text-warning fs-3">Safety Monitoring</h2>
           <ul style={{ listStyleType: "square" }} className="text-light">
-            {items.map((item, index) => (
+            {monitors.map((item, index) => (
               <li key={index} className="fs-5">
                 {item}
               </li>
@@ -49,16 +56,16 @@ const Home = () => {
       <h1 className="text-primary text-center my-5">REMOTE MONITORING & REPORT SYSTEM</h1>
 
       {/* Multiple Transformer Status */}
-      <Common title={`Multiple Transformer Status`} img={imgStatus} divClass={`flex-lg-row`}></Common>
+      <div><Common title={`Multiple Transformer Status`} img={imgStatus} divClass={`flex-lg-row`}></Common></div>
 
       {/* Time Series Transformers Parameter */}
-      <Common title={`Time Series Transformers Parameter`} img={imgTimeSeries} divClass={`flex-lg-row-reverse`}></Common>
+      <div><Common title={`Time Series Transformers Parameter`} img={imgTimeSeries} divClass={`flex-lg-row-reverse`}></Common></div>
 
       {/* Transformer Details Status */}
-      <Common title={`Transformer Details Status`} img={imgDetailsStatus} divClass={`flex-lg-row`}></Common>
+      <div><Common title={`Transformer Details Status`} img={imgDetailsStatus} divClass={`flex-lg-row`}></Common></div>
 
       {/* Transformers Summary */}
-      <Common title={`Transformers Summary`} img={imgSummary} divClass={`flex-lg-row-reverse`}></Common>
+      <div><Common title={`Transformers Summary`} img={imgSummary} divClass={`flex-lg-row-reverse`}></Common></div>
     </div>
   );
 };
