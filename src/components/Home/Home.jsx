@@ -30,10 +30,10 @@ const Home = () => {
       <Banner></Banner>
       {/* FeatureImage */}
       <div className="d-flex justify-content-center">
-      <img data-aos="fade-up" data-aos-duration="2000" src={imgBody} alt="body" className="w-100 p-5" style={{width: "100%",maxWidth: "650px"}} />
+      <img data-aos="fade-up" data-aos-duration="1000" src={imgBody} alt="body" className="w-100 p-5" style={{width: "100%",maxWidth: "750px"}} />
       </div>
       {/* Measures Items */}
-      <div data-aos="fade-up" data-aos-duration="1000" className="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-evenly bg-primary bg-gradient my-5">
+      <div data-aos="fade-up" data-aos-duration="1000" className="d-flex flex-column flex-md-row p-5 gap-4 py-md-5 align-items-center justify-content-evenly bg-primary bg-gradient my-5">
         <div data-aos="fade-left" data-aos-duration="1000" className="item-list">
           <h2 className="text-warning fs-3">
             Measure Items(Phase & Line Parameter)
