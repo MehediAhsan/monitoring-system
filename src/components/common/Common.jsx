@@ -1,15 +1,34 @@
 
-const Common = ({title, img, divClass}) => {
-    return (
-        <div className={`container mx-auto row ${divClass} align-items-center g-5 py-5 my-5`}>
-      <div data-aos="fade-left" data-aos-duration="3000" className="col-10 col-sm-8 col-lg-6">
-        <img src={img} className="d-block mx-lg-auto img-fluid shadow-lg" alt="Bootstrap Themes" width="700" height="500" loading="lazy"/>
-      </div>
-      <div data-aos="fade-right" data-aos-duration="3000" className="col-lg-6">
-        <h1 className=" fw-bold text-body-emphasis fs-2 lh-1 mb-3 text-center">{title}</h1>
+const Common = ({ title, img, divClass, imgClass, bgColor }) => {
+  const textStyle = {
+    textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
+  };
+
+  return (
+    <div style={{ backgroundColor: bgColor }}>
+      <div className={`container py-5 my-5`}>
+        <div className={`row ${divClass} align-items-center g-5`}>
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            className="col-12 col-lg-6"
+          >
+            <img
+              src={img}
+              className={`d-block mx-auto img-fluid shadow-lg ${imgClass}`}
+              alt="Bootstrap Themes"
+              loading="lazy"
+            />
+          </div>
+          <div className="col-12 col-lg-6">
+            <h1 className="fw-semibold fs-1 lh-1 mb-3 text-center" style={textStyle}>
+              {title}
+            </h1>
+          </div>
+        </div>
       </div>
     </div>
-    );
+  );
 };
 
 export default Common;
