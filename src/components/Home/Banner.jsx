@@ -10,7 +10,7 @@ const Banner = () => {
   const { View } = useLottie(options);
 
   const textStyle = {
-    textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+    textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)",
     color: "#ffffff",
   };
 
@@ -23,7 +23,7 @@ const Banner = () => {
     <div className="container-fluid py-5 py-md-0" style={gradientStyle}>
       <div className="container">
         <div className="row justify-content-center align-items-center vh-100">
-          <div className="col-12 col-md-6 text-center ">
+          <div className="col-12 col-md-6 text-center">
             <h1 className="fw-bold lh-1 mb-3" style={textStyle}>SMART TRANSFORMER</h1>
             <h1 className="fw-bold lh-1" style={textStyle}>MONITORING SYSTEM</h1>
           </div>
