@@ -22,8 +22,8 @@ const Banner = () => {
   return (
     <div className="container-fluid py-5 py-md-0" style={gradientStyle}>
       <div className="container">
-        <div className="row justify-content-center align-items-center vh-100">
-          <div className="col-12 col-md-6 text-center">
+        <div className="row justify-content-center align-items-center vh-100 mx-0 mx-md-4">
+          <div className="col-12 col-md-6 text-center text-md-start">
             <h1 className="fw-bold lh-1 mb-3" style={textStyle}>SMART TRANSFORMER</h1>
             <h1 className="fw-bold lh-1" style={textStyle}>MONITORING SYSTEM</h1>
           </div>
