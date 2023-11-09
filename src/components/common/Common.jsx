@@ -7,7 +7,7 @@ const Common = ({ title, img, divClass, imgClass, bgColor }) => {
   return (
     <div style={{ backgroundColor: bgColor }}>
       <div className={`container py-5 my-5`}>
-        <div className={`row ${divClass} align-items-center g-3 mx-3`}>
+        <div className={`row ${divClass} flex-column-reverse flex-md-row align-items-center g-3 mx-3`}>
           <div
             data-aos="fade-left"
             data-aos-duration="1000"
@@ -21,7 +21,7 @@ const Common = ({ title, img, divClass, imgClass, bgColor }) => {
             />
           </div>
           <div className="col-12 col-lg-6">
-            <h1 className="fw-semibold fs-1 lh-1 mt-5 mt-md-0 text-center" style={textStyle}>
+            <h1 className="fw-semibold fs-1 lh-1 mb-5 mb-md-0 text-center" style={textStyle}>
               {title}
             </h1>
           </div>

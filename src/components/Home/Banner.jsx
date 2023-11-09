@@ -16,7 +16,7 @@ const Banner = () => {
 
   const gradientStyle = {
     background: 'linear-gradient(to right, #76DBFD, #46C7F4)', 
-    
+    minHeight: "50vh",
   };
 
   return (
